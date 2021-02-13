@@ -56,6 +56,7 @@ const Products = () => {
                                     <td>{p.likes}</td>
                                     <td>
                                         <div className="btn-group mr-2">
+                                            <Link to={`/admin/products/${p.id}/edit`} className="btn btn-sm btn-outline-secondary" >Edit</Link>
                                             <a href="#" className="btn btn-sm btn-outline-secondary" onClick={() => del(p.id)}>Delete</a>
                                         </div>
                                     </td>
